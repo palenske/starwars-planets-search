@@ -11,8 +11,6 @@
 Essa aplicação consiste numa lista de filtros, resultando em uma tabela com planetas do universo de StarWars de acordo com as condições dos filtros somados. Também é possível ordenar os resultados pelo atributo do planeta de forma crescente ou decrescente.
 As informações a serem filtradas são fornecidas por uma <a href="https://swapi-trybe.herokuapp.com/api/planets/">API</a>.
 
-Projeto realizado como forma de avaliação. Link do repositório original ~> [ByTrybe](https://github.com/tryber/sd-010-b-project-starwars-planets-search/tree/palenske-starwars-planets-search)
-
 ## Tecnologias usadas
 - React
 
