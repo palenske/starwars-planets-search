@@ -16,7 +16,13 @@ function SearchBar() {
 
   const filterForms = () => (
     <form className="App-search-bar">
-      <input type="text" id="name" data-testid="name-filter" onChange={ handleName } />
+      <input
+        type="text"
+        id="name"
+        data-testid="name-filter"
+        placeholder="search by name"
+        onChange={ handleName }
+      />
       <select
         data-testid="column-filter"
         id="column"
@@ -58,51 +64,48 @@ function SearchBar() {
     </form>
   );
 
-  const sortForms = () => (
-    results && (
-      <form className="App-order-bar">
-        <select
-          data-testid="column-sort"
-          name="column"
-          onChange={ handleOrder }
-        >
-          {Object.keys(results[0]).map((item) => (
-            <option key={ item } value={ item }>{item}</option>))}
-        </select>
-        <div className="input-box">
-          <label htmlFor="ASC">
-            ASC
-            <input
-              defaultChecked
-              type="radio"
-              data-testid="column-sort-input-asc"
-              id="ASC"
-              value="ASC"
-              name="sort"
-              onChange={ handleOrder }
-            />
-          </label>
-          <label htmlFor="DESC">
-            DESC
-            <input
-              type="radio"
-              data-testid="column-sort-input-desc"
-              id="DESC"
-              value="DESC"
-              name="sort"
-              onChange={ handleOrder }
-            />
-          </label>
-        </div>
-        <button
-          type="button"
-          data-testid="column-sort-button"
-          onClick={ setOrder }
-        >
-          Ordenar
-        </button>
-      </form>
-    )
+  const sortForms = () => results && (
+    <form className="App-order-bar">
+      <select data-testid="column-sort" name="column" onChange={ handleOrder }>
+        {Object.keys(results[0]).map((item) => (
+          <option key={ item } value={ item }>
+            {item}
+          </option>
+        ))}
+      </select>
+      <div className="input-box">
+        <label htmlFor="ASC">
+          ASC
+          <input
+            defaultChecked
+            type="radio"
+            data-testid="column-sort-input-asc"
+            id="ASC"
+            value="ASC"
+            name="sort"
+            onChange={ handleOrder }
+          />
+        </label>
+        <label htmlFor="DESC">
+          DESC
+          <input
+            type="radio"
+            data-testid="column-sort-input-desc"
+            id="DESC"
+            value="DESC"
+            name="sort"
+            onChange={ handleOrder }
+          />
+        </label>
+      </div>
+      <button
+        type="button"
+        data-testid="column-sort-button"
+        onClick={ setOrder }
+      >
+        Ordenar
+      </button>
+    </form>
   );
 
   return (
