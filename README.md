@@ -21,17 +21,7 @@ As informações a serem filtradas são fornecidas por uma <a href="https://swap
 - Utilizar o _React Hook useEffect_;
 - Criar _React Hooks_ customizados.
 
-## Como rodar a aplicação
-> Certifique-se de que tenha o Git e o NPM instalados em sua máquina. Caso não os tenha rode os seguintes comandos:
-> `sudo apt install git-all` && `sudo apt install npm`
-- Faça um clone do repositório em sua máquina:
-  `git clone https://github.com/palenske/starwars-planets-search.git`
-- Entre no diretório do projeto
-  `cd starwars-planets-search`
-- Instale as dependências:
-  `npm install`
-- Inicie a aplicação:
-  `npm start`
+## [Link da aplicação](https://palenske-sw-planets-search.herokuapp.com/) 🛸
 
 ## Explore o universo
 <img alt="rodando aplicação planets search" src="./public/planetSearch.gif">
