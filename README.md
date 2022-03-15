@@ -22,7 +22,8 @@ As informações a serem filtradas são fornecidas por uma <a href="https://swap
 - Criar _React Hooks_ customizados.
 
 ## Como rodar a aplicação
-> Certifique-se de que tenha o Git instalado em sua máquina.
+> Certifique-se de que tenha o Git e o NPM instalados em sua máquina. Caso não os tenha rode os seguintes comandos:
+> `sudo apt install git-all` && `sudo apt install npm`
 - Faça um clone do repositório em sua máquina:
   `git clone https://github.com/palenske/starwars-planets-search.git`
 - Entre no diretório do projeto
